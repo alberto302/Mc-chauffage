@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Over ons - Mc Chauffage</title>
+  <link rel="stylesheet" href="style.css">
+  
+<script>
+  function changeLanguage(lang) {
+    const page = window.location.pathname.split('/').pop().split('_')[0];
+    window.location.href = page + "_" + lang + ".html";
+  }
+</script>
+
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo Mc Chauffage" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index_nl.html">Startpagina</a></li>
+        <li><a href="about_nl.html">Over ons</a></li>
+        <li><a href="services_nl.html">Diensten</a></li>
+        <li><a href="realisations_nl.html">Realisaties</a></li>
+        <li><a href="contact_nl.html">Contact</a></li>
+      </ul>
+    </nav>
+        <div class="langue">
+          <select onchange="changeLanguage(this.value)">
+            <option value="fr" >FR</option>
+            <option value="en" >EN</option>
+            <option value="nl" selected>NL</option>
+          </select>
+        </div>
+  </header>
+  <main>
+    <h1>Over ons</h1><p>Mc Chauffage is een bedrijf met 10 jaar ervaring op het gebied van verwarming en sanitair.
+       Bij Mc Heating staat uw comfort voorop. Vertrouw op een lokaal, ervaren bedrijf en toegewijd om u een 
+       betrouwbare en duurzame service te bieden.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mc Chauffage - Alle rechten voorbehouden</p>
+  </footer>
+</body>
+</html>

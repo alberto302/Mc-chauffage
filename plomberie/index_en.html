@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Mc Chauffage</title>
+  <link rel="stylesheet" href="style.css">
+  
+<script>
+  function changeLanguage(lang) {
+    const page = window.location.pathname.split('/').pop().split('_')[0];
+    window.location.href = page + "_" + lang + ".html";
+  }
+</script>
+
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo Mc Chauffage" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index_en.html">Home</a></li>
+        <li><a href="about_en.html">About</a></li>
+        <li><a href="services_en.html">Services</a></li>
+        <li><a href="realisations_en.html">Projects</a></li>
+        <li><a href="contact_en.html">Contact</a></li>
+      </ul>
+    </nav>    
+        <div class="langue">
+          <select onchange="changeLanguage(this.value)">
+            <option value="fr" >FR</option>
+            <option value="en" selected>EN</option>
+            <option value="nl" >NL</option>
+          </select>
+        </div>
+  </header>
+  <main>
+    
+    <section class="accueil-introduction">
+      <di>
+        <h1>Welcome to Mc Chauffage</h1>
+        <p>Where<em>professionalism</em> is combined with <em>passion</em>. For
+          more than 10 years now, I have been practicing my profession with the passion
+          that animates me : capturing the essence of every moment.</p>
+           <a href="contact.html" class="cta">TAKE RENDEZ_VOUS</a>
+      </di>  
+        <img src="images/accueil/Mc.jpg" alt="Notre entreprise" style="max-width:300px; height:auto;">
+      </section>    
+  </main>
+  <footer>
+    <p>&copy; 2025 Mc Chauffage - All rights reserved</p>
+    <div>
+      <a target="_blank" href="https://twitter.com/" class="lien-icone">
+          <img src="images/twitter.png" alt="Logo Twitter" >
+      </a>
+      <a target="_blank" href="https://www.instagram.com/" class="lien-icone">
+          <img src="images/instagram.png" alt="Logo Instagram" >
+      </a>
+  </div>
+  </footer>
+</body>
+</html>

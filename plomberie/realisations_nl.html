@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Realisaties - Mc Chauffage</title>
+  <link rel="stylesheet" href="style.css">
+  
+<script>
+  function changeLanguage(lang) {
+    const page = window.location.pathname.split('/').pop().split('_')[0];
+    window.location.href = page + "_" + lang + ".html";
+  }
+</script>
+
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo Mc Chauffage" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index_nl.html">Startpagina</a></li>
+        <li><a href="about_nl.html">Over ons</a></li>
+        <li><a href="services_nl.html">Diensten</a></li>
+        <li><a href="realisations_nl.html">Realisaties</a></li>
+        <li><a href="contact_nl.html">Contact</a></li>
+      </ul>
+    </nav>  
+        <div class="langue">
+          <select onchange="changeLanguage(this.value)">
+            <option value="fr" >FR</option>
+            <option value="en" >EN</option>
+            <option value="nl" selected>NL</option>
+          </select>
+        </div>
+  </header>
+  <main>
+    
+            <h1>Onze Realisaties</h1>
+            <p>Hier zijn enkele voorbeelden van ons werk:</p>
+            <div class="gallery">
+              <img src="images/realisations/travaille1.jpg" alt="Projet 1" style="width:200px;">
+              <img src="images/realisations/travaille2.jpg" alt="Projet 2" style="width:200px;">
+              <img src="images/realisations/travaille3.jpg" alt="Projet 2" style="width:200px;">
+              <img src="images/realisations/travaille4.jpg" alt="Projet 2" style="width:200px;">
+              <img src="images/realisations/travaille5.jpg" alt="Projet 2" style="width:200px;">
+              <img src="images/realisations/travaille6.jpg" alt="Projet 2" style="width:200px;">
+          </div>
+        
+  </main>
+  <footer>
+    <p>&copy; 2025 Mc Chauffage - Alle rechten voorbehouden</p>
+  </footer>
+</body>
+</html>

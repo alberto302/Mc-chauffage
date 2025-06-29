@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil - Mc Chauffage</title>
+  <link rel="stylesheet" href="style.css">
+  
+<script>
+  function changeLanguage(lang) {
+    const page = window.location.pathname.split('/').pop().split('_')[0];
+    window.location.href = page + "_" + lang + ".html";
+  }
+</script>
+
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo Mc Chauffage" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index_fr.html">Accueil</a></li>
+        <li><a href="about_fr.html">À propos</a></li>
+        <li><a href="services_fr.html">Services</a></li>
+        <li><a href="realisations_fr.html">Réalisations</a></li>
+        <li><a href="contact_fr.html">Contact</a></li>
+      </ul>
+    </nav>    
+        <div class="langue">
+          <select onchange="changeLanguage(this.value)">
+            <option value="fr" selected>FR</option>
+            <option value="en" >EN</option>
+            <option value="nl" >NL</option>
+          </select>
+        </div>
+  </header>
+  <main>
+    
+    <section class="accueil-introduction">
+      <di>
+        <h1>Bienvenue chez Mc Chauffage</h1>
+        <p>Où <em>professionalisme</em> s’allie avec <em>passion</em>. Depuis
+          plus de 10 ans maintenant, j’exerce mon métier avec la passion
+          qui m’anime : capturer l’essence de chaque instant.</p>
+           <a href="contact.html" class="cta">PRENDS RENDEZ_VOUS</a>
+      </di>  
+        <img src="images/accueil/Mc.jpg" alt="Notre entreprise" style="max-width:300px; height:auto;">
+      </section>    
+  </main>
+  <footer>
+    <p>&copy; 2025 Mc Chauffage - Tous droits réservés</p>
+    <div>
+      <a target="_blank" href="https://twitter.com/" class="lien-icone">
+          <img src="images/twitter.png" alt="Logo Twitter" >
+      </a>
+      <a target="_blank" href="https://www.instagram.com/" class="lien-icone">
+          <img src="images/instagram.png" alt="Logo Instagram" >
+      </a>
+  </footer>
+</body>
+</html>

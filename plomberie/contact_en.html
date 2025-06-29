@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Mc Chauffage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+<script>
+  function changeLanguage(lang) {
+    const page = window.location.pathname.split('/').pop().split('_')[0];
+    window.location.href = page + "_" + lang + ".html";
+  }
+</script>
+
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo Mc Chauffage" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index_en.html">Home</a></li>
+        <li><a href="about_en.html">About</a></li>
+        <li><a href="services_en.html">Services</a></li>
+        <li><a href="realisations_en.html">Projects</a></li>
+        <li><a href="contact_en.html">Contact</a></li>
+      </ul>
+    </nav>    
+        <div class="langue">
+          <select onchange="changeLanguage(this.value)">
+            <option value="fr" >FR</option>
+            <option value="en" selected>EN</option>
+            <option value="nl" >NL</option>
+          </select>
+        </div>
+  </header>
+  <main>
+    
+            <h1>Contact Us</h1>
+            <form action="https://formspree.io/f/mwpojele" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">Send</button>
+        </form>
+        <h2>Contact Information</h2>
+        <p><i class="fas fa-phone"></i>+32 466 29 05 10</p>
+        <p><i class="fas fa-envelope"></i>Info@mc.chauffagege.be</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mc Chauffage - All rights reserved</p>
+    <div>
+      <a target="_blank" href="https://twitter.com/" class="lien-icone">
+          <img src="images/twitter.png" alt="Logo Twitter" >
+      </a>
+      <a target="_blank" href="https://www.instagram.com/" class="lien-icone">
+          <img src="images/instagram.png" alt="Logo Instagram" >
+      </a>
+  </footer>
+</body>
+</html>

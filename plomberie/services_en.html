@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services - Mc Chauffage</title>
+  <link rel="stylesheet" href="style.css">
+  
+<script>
+  function changeLanguage(lang) {
+    const page = window.location.pathname.split('/').pop().split('_')[0];
+    window.location.href = page + "_" + lang + ".html";
+  }
+</script>
+
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo Mc Chauffage" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index_en.html">Home</a></li>
+        <li><a href="about_en.html">About</a></li>
+        <li><a href="services_en.html">Services</a></li>
+        <li><a href="realisations_en.html">Projects</a></li>
+        <li><a href="contact_en.html">Contact</a></li>
+      </ul>
+    </nav>    
+        <div class="langue">
+          <select onchange="changeLanguage(this.value)">
+            <option value="fr" >FR</option>
+            <option value="en" selected>EN</option>
+            <option value="nl" >NL</option>
+          </select>
+        </div>
+  </header>
+  <main>
+    
+            <h1>Our Services</h1>
+            <ul>
+                <li>Boiler installation</li>
+                <li>Central heating maintenance</li>
+                <li>Plumbing repairs</li>
+                <li>Chimney-sweeping</li>
+            </ul>
+        
+  </main>
+  <footer>
+    <p>&copy; 2025 Mc Chauffage - All rights reserved</p>
+  </footer>
+</body>
+</html>
